@@ -3,22 +3,22 @@ void main(){
 	
 	int i,j, n,m, max, min;
 
-	 printf("Enter size of row:- ");
-	 scanf("%d",&n);
-	 printf("Enter size of column:- ");
-	 scanf("%d",&m);
+	printf("Enter size of row :- ");
+    scanf("%d",&n);
+	printf("Enter size of column :- ");
+	scanf("%d",&m);
 	 
-	 	int a[n][m];
-	 	
+	int a[n][m]; 	
 	for(i=0; i<n; i++){
 	for(j=0; j<m; j++){
 	
-		printf("Enter a[%d][%d]:- ",i,j);
+		printf("Enter a[%d][%d] :- ",i,j);
 		scanf("%d",& a[i][j]);
 		}
 	}
-	max= a[0][0];
 	
+	
+	max= a[0][0];
 	for(i=0; i<n; i++){
 		for(j=0; j<n; j++){
 			if(max<a[i][j]){
@@ -26,12 +26,10 @@ void main(){
 			}
 		}
 	}
-
-printf("\n maximum number is :- %d",max);
+    printf("\n maximum number is :- %d",max);	
 	
 	
-		min= a[0][0];
-	
+	min= a[0][0];
 	for(i=0; i<n; i++){
 		for(j=0; j<n; j++){
 			if(min>a[i][j]){
@@ -39,9 +37,6 @@ printf("\n maximum number is :- %d",max);
 			}
 		}
 	}
-
-printf("\n  manimum number is :- %d",min);
-	
-	
-	
+    printf("\n  manimum number is :- %d",min);
+		
 }
